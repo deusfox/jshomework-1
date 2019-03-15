@@ -6,8 +6,6 @@ var first,
 let money = prompt("Ваш бюджет на месяц?","30000");
 let time = prompt("Введите дату в формате YYYY-MM-DD", "2019-03-14");
 
-
-
 console.log(money);
 console.log(time);
 
@@ -36,9 +34,9 @@ let AppData = {
     savings: false 
 };
 
-let dayBudget = (30000 - 10000 - 6000)/30;
+let dayBudget = (money - firstAnswer - secondAnswer)/30;
 alert(dayBudget)
 //console.log(AppData.expenses.first)
 
-
+ 
 //console.log(AppData[expenses.firstQuestion]);
